@@ -55,11 +55,13 @@ We are now set with the database and credentials and will incorporate them into 
 
 Let's build a quick model to host data on Nerd Holidays.
 
-*** Open CQL Console on Astra OR use the new [Astra CLI](https://www.datastax.com/blog/introducing-cassandra-astra-cli)
+### Open CQL Console on Astra OR use the new [Astra CLI](https://www.datastax.com/blog/introducing-cassandra-astra-cli)
 
 ```sql
 use live_coding;
 ```
+
+Copy/paste the DDL.
 
 ### Table Schema
 ```sql
@@ -71,6 +73,8 @@ CREATE TABLE nerd_holidays (
   PRIMARY KEY ((year_bucket), event_date, id)
 ) WITH CLUSTERING ORDER BY (event_date ASC, id ASC);
 ```
+
+Copy/paste the DML.
 
 ### Table Data
 ```sql
@@ -140,7 +144,7 @@ Mac/Linux:
 source .env
 ```
 
-On Windows, you can use an `env.bat` file for the same effect':
+On Windows, you can use an `env.bat` file for the same effect:
 ```bash
 set ASTRA_DB_ID=
 set ASTRA_DB_REGION=
