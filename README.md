@@ -152,3 +152,19 @@ set ASTRA_DB_APP_TOKEN=
 set ASTRA_DB_KEYSPACE=live-coding
 ```
 
+## 4. Spring Initializr
+
+Go to the [Spring Initializr](https://start.spring.io/).
+
+ - Select either Gradle or Maven (your choice).  I'm going to use Maven.
+ - Select Spring Boot version 2.7.7.
+ - Name the project metadata as you wish.
+ - Leave packaging as "Jar"
+ - Leave Java as 17
+ 
+Dependencies:
+ - Spring Web
+ - Vaadin
+ - Spring Data Cassandra
+
+Note: The `pom.xml` should be out here shortly.
