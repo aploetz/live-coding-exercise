@@ -134,7 +134,7 @@ Edit your `.env` file with your Astra DB credentials.  You should have the token
 export ASTRA_DB_ID=
 export ASTRA_DB_REGION=
 export ASTRA_DB_APP_TOKEN=
-export ASTRA_DB_KEYSPACE=live-coding
+export ASTRA_DB_KEYSPACE=live_coding
 ```
 
 Instantiate those environment variables:
@@ -149,7 +149,7 @@ On Windows, you can use an `env.bat` file for the same effect:
 set ASTRA_DB_ID=
 set ASTRA_DB_REGION=
 set ASTRA_DB_APP_TOKEN=
-set ASTRA_DB_KEYSPACE=live-coding
+set ASTRA_DB_KEYSPACE=live_coding
 ```
 
 ## 4. Spring Initializr
